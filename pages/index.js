@@ -34,7 +34,7 @@ export default function Home() {
     return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>SALVE</title>
+        <title>Chess Quiz - Alura</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
