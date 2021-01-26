@@ -48,7 +48,7 @@ export const Input1 = styled.input`
     width: 100%;
     border: 1px solid rgba(255,255,255, .1);
     border-radius: .2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background: white;
     font-size: 16px;
    
@@ -64,7 +64,7 @@ export default function Home() {
         <title>Chess Quiz - Alura</title>
       </Head>
       <QuizContainer>
-        <QuizLogo />
+        <QuizLogo src={db.logo}/>
         <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
@@ -78,8 +78,8 @@ export default function Home() {
               event.preventDefault();
               router.push(`/quiz?name=${name}`)
             }}>
-              <Input1 placeholder = 'Digite seu nome ' />
-              <BotaoJogar type="submit" disabled={name.length === 0}>
+              <Input1 placeholder = 'Digite seu nome '/>
+              <BotaoJogar type="Onsubmit" disabled={name.length === 0}>
                 Jogar
               </BotaoJogar>
             </form>

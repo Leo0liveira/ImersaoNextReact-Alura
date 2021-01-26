@@ -1,6 +1,7 @@
 {
     "bg": "https://blenderartists.org/uploads/default/original/4X/5/e/9/5e943043fa5a77a1cd6073b24b3adb2e24dec40e.jpg",
     "title": "Desafio Xadrez - Alura",
+    "logo":"https://i.imgur.com/umOQvSH.png",
     "description": "Teste os seus conhecimentos sobre xadrez, vamos ver quantos xeques mates você vai realizar!",
     "questions": [
       {
