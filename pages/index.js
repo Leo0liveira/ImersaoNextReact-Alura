@@ -26,6 +26,33 @@ export const QuizContainer = styled.div`
     padding: 15px;
   }
 `;
+export const BotaoJogar = styled.button`
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fbf5de;
+    padding: .4rem;
+    width: 100%;
+    background: #30271e;
+    border: none;
+    border-radius: .2rem;
+    transition: all .2s;
+    cursor: pointer;
+    &:hover {
+      background: #706677;
+
+    }
+`;
+
+export const Input1 = styled.input`
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgba(255,255,255, .1);
+    border-radius: .2rem;
+    margin-bottom: 2rem;
+    background: white;
+    font-size: 16px;
+   
+`;
 
 export default function Home() {
     const router = useRouter();
@@ -43,6 +70,7 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
+            <p>{db.description}</p>
             <form onChange= {function(event) {
               setName(event.target.value);
             }}  
@@ -50,10 +78,10 @@ export default function Home() {
               event.preventDefault();
               router.push(`/quiz?name=${name}`)
             }}>
-              <input placeholder = 'Digite seu nome ' />
-              <button type="submit" disabled={name.length === 0}>
+              <Input1 placeholder = 'Digite seu nome ' />
+              <BotaoJogar type="submit" disabled={name.length === 0}>
                 Jogar
-              </button>
+              </BotaoJogar>
             </form>
           </Widget.Content>
         </Widget>
