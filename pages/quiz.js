@@ -93,7 +93,7 @@ function QuestionWidget({
       // fetch() ...
       setTimeout(() => {
         setScreenState(screenStates.QUIZ);
-      }, 2 * 1000);
+      }, 2.9* 1000);
     // nasce === didMount
     }, []);
   
