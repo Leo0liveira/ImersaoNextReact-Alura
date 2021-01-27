@@ -1,13 +1,17 @@
-import styled from 'styled-components'
-import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
+import React from 'react';
+import styled from 'styled-components';
 import Head from 'next/head';
-import {Router, useRouter} from 'next/router';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
+
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
+import QuizContainer from '../src/components/QuizContainer';
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -15,44 +19,6 @@ import { useState } from 'react';
 //   background-size: cover;
 //   background-position: center;
 // `;
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
-export const BotaoJogar = styled.button`
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fbf5de;
-    padding: .4rem;
-    width: 100%;
-    background: #30271e;
-    border: none;
-    border-radius: .2rem;
-    transition: all .2s;
-    cursor: pointer;
-    &:hover {
-      background: #706677;
-
-    }
-`;
-
-export const Input1 = styled.input`
-    padding: 10px;
-    width: 100%;
-    border: 1px solid rgba(255,255,255, .1);
-    border-radius: .2rem;
-    margin-bottom: 1rem;
-    background: white;
-    font-size: 16px;
-   
-`;
 
 export default function Home() {
     const router = useRouter();
@@ -78,10 +44,10 @@ export default function Home() {
               event.preventDefault();
               router.push(`/quiz?name=${name}`)
             }}>
-              <Input1 placeholder = 'Digite seu nome '/>
-              <BotaoJogar type="Onsubmit" disabled={name.length === 0}>
+              <Input placeholder = 'Digite seu nome '/>
+              <Button type="Onsubmit" disabled={name.length === 0}>
                 Jogar
-              </BotaoJogar>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
@@ -90,7 +56,7 @@ export default function Home() {
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Confira algum dos quizes criados durante a Imersão Alura: </p>
           </Widget.Content>
         </Widget>
         <Footer />

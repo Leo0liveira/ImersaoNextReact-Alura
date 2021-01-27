@@ -5,25 +5,123 @@
     "description": "Teste os seus conhecimentos sobre xadrez, vamos ver quantos xeques mates você vai realizar!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer executar um gambito da rainha?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://i2.wp.com/www.smartprix.com/bytes/wp-content/uploads/2018/04/chess-featured-smartprix.jpg?fit=1200%2C630&ssl=1",
+        "title": "Qual a peça fundamental do xadrez?",
+        "description": " ",
+        "answer": 4,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Torre",
+          "Cavalo",
+          "Dama",
+          "Rei"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um xeque mate em apenas 5 movimentos?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://images.chesscomfiles.com/uploads/v1/blog/406536.2cf64805.668x375o.3bb6042aa84f.jpeg",
+        "title": "Em qual direção o peão se movimenta normalmente?",
+        "description": " ",
+        "answer": 3,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Diagonal",
+           "Para trás",
+           "Para frente",
+           "Para trás e para frente"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3o6Mb4zh0wwCKZCEZW/giphy.gif",
+        "title": "Qual o número mínimo de peças ao final de um jogo de xadrez?",
+        "description": " ",
+        "answer": 2,
+        "alternatives": [
+          "1 ",
+          "2 ",
+          "3 ",
+          "4 "
+        ]
+      },
+      {
+        "image": "https://chessplus.net/wp-content/uploads/2020/04/felix-mittermeier-nAjil1z3eLk-unsplash-scaled.jpg",
+        "title": "Qual o número mínimo de peças ao final de um jogo de xadrez para que exista um vencedor?",
+        "description": " ",
+        "answer": 1,
+        "alternatives": [
+          "3",
+          "1",
+          "4",
+          "2"
+        ]
+      },
+      {
+        "image": "https://image.freepik.com/free-photo/gold-bishop-chess-board_44394-518.jpg",
+        "title": "Qual das peças é incapaz de fazer um xeque ao adversário?",
+        "description": " ",
+        "answer": 1,
+        "alternatives": [
+          "Rei",
+          "Dama",
+          "Peão",
+          "Bispo"
+        ]
+      },
+      {
+        "image": "https://customerthink.com/wp-content/uploads/Checkmate-in-chess.jpg",
+        "title": "O que significa a expressão xeque mate?",
+        "description": " ",
+        "answer": 3,
+        "alternatives": [
+          "Permissão para jogar outra vez",
+          "Quem falou está desistindo da partida",
+          "Significa que o adversário está sob ataque e não há como escapar",
+          "A rainha corre perigo"
+        ]
+      },
+      {
+        "image": "https://envato-shoebox-0.imgix.net/3236/7740-60a6-42f2-9642-1d3a22d3db6d/IMG_2370.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=32f94a864bab792d64f98a1c8fe3fbe9",
+        "title": "Quando o peão se movimenta até a última casa do tabuleiro, o que acontece?",
+        "description": " ",
+        "answer": 2,
+        "alternatives": [
+          "Outro peão entra em jogo",
+          "Troca-se o peão por uma outra peça",
+          "Pega uma carta do monte de descarte",
+          "Elimina-se uma peça qualquer (menos o rei) do adversário"
+        ]
+      },
+      {
+        "image": "https://media.istockphoto.com/photos/gold-king-in-chess-game-face-with-the-another-silver-team-on-black-picture-id901195744?k=6&m=901195744&s=612x612&w=0&h=GLUP8XzTWLOmO6Ob0XpRfQpsA3MmFyxhOfRSr_abyhs=",
+        "title": "Como o rei anda no xadrez?",
+        "description": " ",
+        "answer": 4,
+        "alternatives": [
+          "Nas diagonais",
+          "Para qualquer lugar, pois ele é o rei",
+          "Ele não anda",
+          "Uma casa por vez e para qualquer lugar"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/iCZyBnPBLr0dy/giphy.gif",
+        "title": "Qual o objetivo do xadrez?",
+        "description": " ",
+        "answer": 3,
+        "alternatives": [
+          "Capturar todos os peões",
+          "Converter as peças inimigas usando o bispo",
+          "Deixar o rei do oponente sem movimentos válidos e em xeque",
+          "Comer todas as peças do adversário"
+        ]
+      },
+      {
+        "image": "https://ng.kcsd.org/wp-content/uploads/sites/7/2019/02/17623.87bb05cd.5000x5000o.bf0a4fe546cb.jpg",
+        "title": "Qual a peça mais valorizada depois do rei?",
+        "description": " ",
+        "answer": 2,
+        "alternatives": [
+          "Bispo",
+          "Rainha",
+          "Torre",
+          "Cavalo"
         ]
       }
     ],
