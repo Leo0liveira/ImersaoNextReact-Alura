@@ -17,7 +17,7 @@ import LoadingWidget from '../../src/components/LoadingScreen';
 
       <Widget>
         <Widget.Header>
-            {name}, você acertou
+           <h1> {name}, você acertou
             {' '}
             {results.reduce((somatoriaAtual, resultAtual) =>{
               const isAcerto = resultAtual === true;
@@ -29,13 +29,14 @@ import LoadingWidget from '../../src/components/LoadingScreen';
             
             {' '}
             perguntas!
+            </h1>
         </Widget.Header>
             
         <Widget.Content>
-          <p>
+          <h1>
             Continue Praticando logo estará apto a executar um gambito da rainha!
-          </p>
-          <ul>
+          </h1>
+          <h3>
             {results.map((results, index) => (
               <li key={`result_${results}`}>
                 {index + 1}
@@ -43,7 +44,7 @@ import LoadingWidget from '../../src/components/LoadingScreen';
                 {results === true ? 'Acertou': 'Errou'}
               </li>
             ))}
-          </ul>
+          </h3>
         </Widget.Content>
       </Widget>
     );
