@@ -11,7 +11,7 @@ import Button from '../../src/components/Button';
 import LoadingWidget from '../../src/components/LoadingScreen';
 // import LoadingResult from '../src/components/LoadingResult';
 
-  function ResultWidget({ result }) {
+  function ResultWidget({ results }) {
     const router = useRouter();
     const {name} = router.query;return (
 
@@ -19,7 +19,7 @@ import LoadingWidget from '../../src/components/LoadingScreen';
         <Widget.Header>
             {name}, você acertou
             {' '}
-            {result.reduce((somatoriaAtual, resultAtual) =>{
+            {results.reduce((somatoriaAtual, resultAtual) =>{
               const isAcerto = resultAtual === true;
               if (isAcerto) {
                   return somatoriaAtual + 1;
@@ -36,7 +36,7 @@ import LoadingWidget from '../../src/components/LoadingScreen';
             Continue Praticando logo estará apto a executar um gambito da rainha!
           </p>
           <ul>
-            {result.map((results, index) => (
+            {results.map((results, index) => (
               <li key={`result_${results}`}>
                 {index + 1}
                 º Questão: {' '}
@@ -96,7 +96,7 @@ function QuestionWidget({
                 onSubmit();
                 setIsQuestionSubmited(false);
                 setAlternativaSelecionada(undefined);
-              },1* 1000);
+              },1.5* 1000);
             }}
           >
              {question.alternatives.map((alternative, alternativeIndex) => {
@@ -130,8 +130,8 @@ function QuestionWidget({
               Confirmar
             </Button>
             {/* <p>selectedAlternative: {`$selectedAlternative`}</p> */}
-            {isQuestionSubmited && isCorrect}
-            {isQuestionSubmited && !isCorrect}
+            {isQuestionSubmited && isCorrect && <h2> Parabéns, você acertou! </h2>}
+            {isQuestionSubmited && !isCorrect && <h2> Ah você errou, vamos para a próxima!</h2>}
           </AlternativesForm>
         </Widget.Content>
       </Widget>
@@ -148,14 +148,14 @@ function QuestionWidget({
   export default function QuizPage() {
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
-    const [result, setResult] = React.useState([]);
+    const [results, setResults] = React.useState([]);
     const totalQuestions = db.questions.length;
     const questionIndex = currentQuestion;
     const question = db.questions[questionIndex];
     
-    function addResult(){
-      setResult([
-        ...result,
+    function addResult(result){
+      setResults([
+        ...results,
         result,
       ]);
     }
@@ -193,7 +193,7 @@ function QuestionWidget({
           )}
   
           {screenState === screenStates.LOADING && <LoadingWidget />}
-          {screenState === screenStates.RESULT && <ResultWidget result={result}/>}
+          {screenState === screenStates.RESULT && <ResultWidget results={results}/>}
           {/* {screenState === screenStates.LOADINGFINAL && <LoadingResult />} */}
         </QuizContainer>
       </QuizBackground>
