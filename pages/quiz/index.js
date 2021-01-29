@@ -1,13 +1,14 @@
 import React from 'react';
-import db from '../db.json';
+import db from '../../db.json';
 import { useRouter } from 'next/router';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import LoadingWidget from '../src/components/LoadingScreen';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import {motion} from 'framer-motion';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import Button from '../../src/components/Button';
+import LoadingWidget from '../../src/components/LoadingScreen';
 // import LoadingResult from '../src/components/LoadingResult';
 
   function ResultWidget({ result }) {
@@ -163,7 +164,7 @@ function QuestionWidget({
       // fetch() ...
       setTimeout(() => {
         setScreenState(screenStates.QUIZ);
-      }, 2.01 * 1000);
+      }, 2.15 * 1000);
 
     // nasce === didMount
     }, []);

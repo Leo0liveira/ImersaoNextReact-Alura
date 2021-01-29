@@ -126,7 +126,10 @@
       }
     ],
     "external": [
-      ""
+      "https://historyquiz.vercel.app/",
+      "https://aluraquizpokemon.cesarrobertopg.vercel.app/",
+      "https://naruto-quiz.llofyy.vercel.app/",
+      "https://alura-quiz.netmatioazi.vercel.app/"
     ],
     "theme": {
       "colors": {
