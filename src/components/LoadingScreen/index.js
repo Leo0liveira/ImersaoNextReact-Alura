@@ -14,7 +14,7 @@ function LoadingWidget() {
       animate="show"
       >
         <Widget.Header>
-        Aguarde por favor, estamos montando o tabuleiro.
+        <h1> Aguarde por favor, estamos montando o tabuleiro. </h1> 
         </Widget.Header>
         <Widget.Content>
         <img alt="GifLoading"
